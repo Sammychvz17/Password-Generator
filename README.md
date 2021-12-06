@@ -1,2 +1,1 @@
-# Password-Generator
-This Creates random passwords for you 
+# Password Generator Starter Code
