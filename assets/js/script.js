@@ -10,12 +10,17 @@ function generatePassword() {
 };
 
 // Write password to the #password input
-function writePassword() {
+function writePassword(num) {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
   
 
   passwordText.value = password;
+
+  for (var i = 0; i < num; i++) {
+    password += generatePassword();
+  }
+  return password;
   
 
 };
